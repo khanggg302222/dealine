@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <!-- link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+  <h1>User Management</h1>
+
+  <!-- Form import user -->
+  <div class="form">
+    <input type="text" id="name" placeholder="Enter name">
+    <input type="email" id="email" placeholder="Enter email">
+    <button onclick="addUser()">Add User</button>
+  </div>
+
+  <!-- Table list user -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="userTable"></tbody>
+  </table>
+
+  <!-- link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
