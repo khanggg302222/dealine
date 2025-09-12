@@ -12,7 +12,6 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], 
-    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -36,3 +35,4 @@ def update_user(user_id: str, user: User):
 @app.delete("/users/{user_id}")
 def delete_user(user_id: str):
     return service.delete_user(user_id)
+
