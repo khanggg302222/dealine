@@ -28,3 +28,5 @@ def delete_user(user_id: str):
     if result.deleted_count == 0:
         raise HTTPException(status_code=404, detail="User not found")
     return {"message": "Deletion successful"}
+
+# service
